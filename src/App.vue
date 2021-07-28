@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <TopBar/>
+    <Section/>
+    <AreaButtons/>
+    <Warning />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TopBar from './components/TopBar.vue'
+import Section from './components/Section.vue'
+import AreaButtons from './components/AreaButtons.vue'
+import Warning from './components/Warning.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TopBar,
+    Section,
+    AreaButtons,
+    Warning
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .app{
+    background-color: #CCC;
+    height: 100vh;
+  }
 </style>
