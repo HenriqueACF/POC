@@ -4,7 +4,12 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: '', component: () => import('pages/Index.vue') },
+      { path:'/Pagamento', component:() => import('pages/Pagamento.vue')},
+      { path:'/TipoPagamento', component:() => import('pages/TipoPagamento.vue')},
+      { path:'/SenhaPagamento', component:() => import('pages/SenhaPagamento.vue')},
+      { path:'/CodigoDeBarras', component:() => import('pages/CodigoDeBarras.vue')},
+      { path: '/SenhaCodigoDeBarras', component:() => import('pages/SenhaCodigoDeBarras.vue')}
     ]
   },
 

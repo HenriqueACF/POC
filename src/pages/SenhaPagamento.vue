@@ -1,18 +1,26 @@
 <template>
   <div class="container">
-    <p class="subTitle">Transações disponíveis</p>
+    <p class="subTitle">Digite a sua senha:</p>
+    <div class="dashboa">
+        <q-input filled v-model="text" />
+        <Buttons texto="Cancelar" />
+        <Buttons texto="Confirmar" to='/codigoDeBarras'/>
+    </div>
   </div>
-  <Buttons texto="Saldo" />
-  <Buttons texto="Extrato"/>
-  <Buttons texto="Pagamento" to='/pagamento'/>
-  <Buttons texto="Transferência"/>
+    
 </template>
 
 <script>
+import { ref } from 'vue'
 import Buttons from '../components/Buttons.vue'
 export default {
   components:{
     Buttons
+  },
+  setup () {
+    return {
+      text: ref('')
+    }
   }
 }
 </script>

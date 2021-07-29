@@ -1,24 +1,21 @@
 <template>
   <div class="container">
-    <p class="subTitle">Transações disponíveis</p>
+    <p class="subTitle">Escolha o tipo de pagamento:</p>
   </div>
-  <Buttons texto="Saldo" />
-  <Buttons texto="Extrato"/>
-  <Buttons texto="Pagamento" to='/pagamento'/>
-  <Buttons texto="Transferência"/>
+  <Buttons texto="CONVÊNIO/DARF/REIMPRESSÃO" to='/tipoPagamento' />
 </template>
 
 <script>
 import Buttons from '../components/Buttons.vue'
-export default {
-  components:{
-    Buttons
-  }
+export default {    
+    components:{
+        Buttons
+    }
 }
 </script>
 
 <style>
-  .container{
+    .container{
     padding-top: 30px;
   }
 
