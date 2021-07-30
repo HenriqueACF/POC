@@ -15,7 +15,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 import Buttons from "../components/Buttons.vue";
 export default {
   components: {

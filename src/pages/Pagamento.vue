@@ -2,7 +2,10 @@
   <div class="container">
     <p class="subTitle">Escolha o tipo de pagamento:</p>
   </div>
-  <Buttons texto="CONVÊNIO/DARF/REIMPRESSÃO" to='/tipoPagamento' />
+  <div class="btns">
+    <Buttons class="btn" texto="CONVÊNIO/DARF/REIMPRESSÃO" icone='chevron_left' to='/tipoPagamento' />
+    <Buttons texto="Voltar" icone='chevron_left' to='/' />
+  </div>
 </template>
 
 <script>
@@ -14,7 +17,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .container{
     padding-top: 30px;
   }
@@ -27,4 +30,16 @@ export default {
     font-weight: 800;
   }
   
+  .btns{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-top: 50px;
+  }
+
+  .btn{
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
 </style>
