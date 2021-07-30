@@ -11,7 +11,14 @@
       <q-input class="inputs menor" filled v-model="codigo.n4"  />
       <q-input class="inputs" filled v-model="codigo.n5"  />
     </div>
-    <Buttons class="btn" texto='Confirmar' to='/'/>
+    <div class="footer">
+      <div class="warning">
+        <p><strong>Utilize o teclado numérico</strong> localizado <br/>
+          abaixo da tecla para digitar código.
+        </p>
+      </div>
+      <Buttons class="btn" texto='Confirmar' icon-right='chevron_right' to='/ConfirmarPagamento'/>
+    </div>
   </div>
 </template>
 
@@ -50,8 +57,8 @@ export default {
 .cdg {
   display: flex;
   justify-content: center;
-  height: 160px;
-  margin-bottom: 40px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 .subTitle {
   display: flex;
@@ -75,8 +82,25 @@ export default {
     width: 50px;
 }
 .btn{
-    display: flex;
-    left: 75%;
-    margin-top: 45px;
+    margin-right: 20px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.warning{
+  border: 2px solid #081f60;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color:#081f60;
+  width: 300px;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
 }
 </style>

@@ -26,6 +26,8 @@ export default defineComponent({
     height: 65px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    display: flex;
+    justify-content: center;
   }
   .title{
     display: flex;

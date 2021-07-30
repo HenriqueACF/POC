@@ -10,7 +10,7 @@
           </p>
         </div>
         <div class="buttons">
-          <Buttons texto="Cancelar" icone='chevron_left' to='/tipoPagamento' />
+          <Buttons texto="Cancelar" icone='chevron_left' to='/operacaoCancelada' />
           <Buttons texto="Confirmar" icon-right="chevron_right" to='/codigoDeBarras'/>
         </div>
     </div>
