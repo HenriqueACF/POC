@@ -11,7 +11,10 @@ const routes = [
       { path:'/CodigoDeBarras', component:() => import('pages/CodigoDeBarras.vue')},
       { path: '/SenhaCodigoDeBarras', component:() => import('pages/SenhaCodigoDeBarras.vue')},
       { path: '/OperacaoCancelada', component:() => import('pages/OperacaoCancelada.vue')},
-      { path: '/ConfirmarPagamento', component:() => import('pages/ConfirmarPagamento.vue')}
+      { path: '/ConfirmarPagamento', component:() => import('pages/ConfirmarPagamento.vue')},
+      { path: '/InserirCartao', component:() => import('pages/InserirCartao.vue')},
+      { path: '/AguardandoPagamento', component:() => import('pages/AguardandoPagamento.vue')},
+      { path: '/PagamentoRealizado', component:() => import('pages/PagamentoRealizado.vue')}
     ]
   },
 

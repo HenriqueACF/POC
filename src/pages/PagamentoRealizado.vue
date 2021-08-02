@@ -1,0 +1,39 @@
+<template>
+  <div class="container">
+      <div class="warning">
+          <img class="img" src="../assets/check.png"/>
+          <h5>Pagamento realizado<br/>
+              com sucesso.
+          </h5>
+          <h6>
+              O comprovante será impresso <br/>
+              no local indicado.
+          </h6>
+      </div>
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style scoped>
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .warning{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #081F60;
+    }
+    .img{
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+    }
+</style>

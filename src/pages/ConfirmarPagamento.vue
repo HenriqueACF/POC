@@ -13,9 +13,11 @@
           <div class="text-h6">
             Código de Barras: 0000000 0000000 0000000 0 0000000
           </div>
-          <q-space/>
-          <div class="text-h6">Rede Celpa</div>
-          <div class="text-h6">Valor:R$246,00</div>
+          <div class="cardSection2">
+            <div class="text-h6">Equatorial Energia</div>
+            <q-space/>
+            <div class="text-h6">Valor:R$246,00</div>
+          </div>
         </q-card-section>
       </q-card>
     </div>
@@ -28,7 +30,7 @@
         <Buttons
           texto="Sim"
           icon-right="chevron_right"
-          to="/codigoDeBarras"
+          to="/inserirCartao"
         />
       </div>
   </div>
@@ -73,6 +75,10 @@ export default {
     height: 200px;
     margin-bottom: 120px;
     color: #081f60;
+}
+
+.cardSection2{
+  display: flex;
 }
 
 .buttons {
