@@ -84,7 +84,11 @@ export default {
 .buttons {
   display: flex;
   justify-content: space-between;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.btn{
+  width: 400px;
 }
 </style>

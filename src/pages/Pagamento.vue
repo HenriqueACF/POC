@@ -40,6 +40,6 @@ export default {
   .btn{
     width: 400px;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
 </style>

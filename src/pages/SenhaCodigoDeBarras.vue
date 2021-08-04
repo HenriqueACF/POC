@@ -82,7 +82,8 @@ export default {
     width: 50px;
 }
 .btn{
-    margin-right: 20px;
+    margin-right: 2%;
+    width: 400px;
 }
 
 .footer{

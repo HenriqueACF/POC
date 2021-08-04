@@ -3,9 +3,9 @@
     <p class="subTitle">Escolha o tipo de pagamento:</p>
   </div>
   <div class="btns">
-    <Buttons texto="Convênio" to="/senhapagamento" icone='chevron_left'/>
-    <Buttons texto="Reimpressão de comprovante" icone='chevron_left' class="btn2"/>
-    <Buttons texto="Voltar" icone='chevron_left' to='/pagamento' />
+    <Buttons texto="Convênio" to="/senhapagamento" icone='chevron_left' class="btn"/>
+    <Buttons texto="Reimpressão de comprovante" icone='chevron_left' class="btn"/>
+    <Buttons texto="Voltar" icone='chevron_left' to='/pagamento' class="btn" />
   </div>
 </template>
 
@@ -38,9 +38,9 @@ export default {
     margin-top: 50px;
   }
 
-  .btn2{
+  .btn{
     width: 400px;
-    margin-top: 70px;
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 </style>

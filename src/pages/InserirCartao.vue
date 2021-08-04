@@ -38,6 +38,7 @@ export default {
     }
 
     .btn{
-        margin-left: 1%;
+        margin-left: 2%;
+        width: 400px;
     }
 </style>

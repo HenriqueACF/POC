@@ -10,8 +10,8 @@
           </p>
         </div>
         <div class="buttons">
-          <Buttons texto="Cancelar" icone='chevron_left' to='/operacaoCancelada' />
-          <Buttons texto="Confirmar" icon-right="chevron_right" to='/codigoDeBarras'/>
+          <Buttons texto="Cancelar" icone='chevron_left' to='/operacaoCancelada' class="btn" />
+          <Buttons texto="Confirmar" icon-right="chevron_right" to='/codigoDeBarras' class="btn"/>
         </div>
     </div>
   </div>
@@ -75,7 +75,11 @@ export default {
   .buttons{
     display: flex;
     justify-content: space-between;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .btn{
+    width: 400px;
   }
 </style>

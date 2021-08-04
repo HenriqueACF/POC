@@ -4,12 +4,12 @@
   </div>
   <div class="btns row justify-between ">
     <div class="column  q-gutter-xl">
-      <Buttons  icon="chevron_left"  label="Saldo" />
-      <Buttons icon="chevron_left" label="Pagamento" to='/Pagamento' />
+      <Buttons class="btn" icon="chevron_left"  label="Saldo" />
+      <Buttons class="btn" icon="chevron_left" label="Pagamento" to='/Pagamento' />
     </div>
     <div class="column  q-gutter-xl">
-      <Buttons icon-right="chevron_right"  label="Extrato" />
-      <Buttons icon-right="chevron_right" label="Transferência" />
+      <Buttons class="btn" icon-right="chevron_right"  label="Extrato" />
+      <Buttons class="btn" icon-right="chevron_right" label="Transferência" />
     </div>
   </div>
   <div class="warning">
@@ -46,6 +46,10 @@ export default {
 .btns{
   margin-left: 2%;
   margin-right: 2%;
+}
+
+.btn{
+  width: 400px;
 }
 
 .warning {
