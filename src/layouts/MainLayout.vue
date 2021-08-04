@@ -32,7 +32,7 @@ export default defineComponent({
   .title{
     display: flex;
     justify-content: center;
-    padding: 13px;
+    align-items: center;
     color:#FFF;
     font-weight: 500;
     font-size: 20px;

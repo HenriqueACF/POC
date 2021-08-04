@@ -44,6 +44,7 @@ export default {
 }
 
 .btns{
+  margin-top: 60px;
   margin-left: 2%;
   margin-right: 2%;
 }
@@ -55,13 +56,14 @@ export default {
 .warning {
   display: flex;
   align-items: center;
+  justify-content: center;
   border: 2px solid #e20613;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   height: 90px;
   width: 510px;
-  margin-left: 4%;
+  margin-left: 2%;
   margin-top: 100px;
 }
 

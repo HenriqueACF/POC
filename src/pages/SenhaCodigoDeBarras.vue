@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
 .container {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .dashboard {
@@ -57,6 +57,7 @@ export default {
 .cdg {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 120px;
   margin-bottom: 30px;
 }
@@ -71,6 +72,7 @@ export default {
 .input{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 20px;
 }
 
@@ -89,7 +91,7 @@ export default {
 .footer{
   display: flex;
   justify-content: space-between;
-  margin-top: 90px;
+  margin-top: 100px;
 }
 
 .warning{
@@ -99,9 +101,10 @@ export default {
   border-bottom-right-radius: 20px;
   color:#081f60;
   width: 300px;
-  margin-left: 25px;
+  margin-left: 2%;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 16px;
 }
 </style>

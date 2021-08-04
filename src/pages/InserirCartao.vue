@@ -28,13 +28,15 @@ export default {
     .warning{
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         color: #081F60;
+        margin-bottom: 10px;
     }
     .img{
         width: 200px;
         height: 200px;
-        margin-top: 60px;
+        margin-top: 50px;
     }
 
     .btn{

@@ -24,13 +24,13 @@ export default {
     .warning{
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         color: #081F60;
     }
     .img{
         width: 200px;
         height: 200px;
-        margin-top: 60px;
-        margin-left: 55px;
+        margin-top: 50px;
     }
 </style>

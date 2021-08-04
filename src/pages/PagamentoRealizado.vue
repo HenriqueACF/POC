@@ -26,12 +26,11 @@ export default {
     }
     .warning{
         display: flex;
-        justify-content: center;
+        align-items: center;
         flex-direction: column;
         color: #081F60;
     }
     .img{
-        justify-content: center;
         width: 200px;
         height: 200px;
         margin-top: 50px;

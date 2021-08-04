@@ -61,6 +61,7 @@ export default {
   .warning{
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #081F60;
     font-size: 18px;
     margin-left: 40px;
