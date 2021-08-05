@@ -18,6 +18,9 @@ import Buttons from "../components/Buttons.vue";
 export default {
   components: {
     Buttons,
+  },
+  created() {
+    setTimeout(() => this.$router.push({ path: "/senhacodigodebarras" }), 5000);
   }
 };
 </script>

@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <p class="subTitle">Transações disponíveis</p>
-  </div>
   <div class="btns row justify-between ">
     <div class="column  q-gutter-xl">
       <Buttons class="btn" icon="chevron_left"  label="Saldo" />
@@ -18,6 +17,7 @@
       toque(touchscreen) <br />
       <strong>Utilize os botões laterais.</strong>
     </p>
+  </div>
   </div>
 </template>
 

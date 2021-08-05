@@ -21,6 +21,9 @@ export default defineComponent({
 </script>
 
 <style> 
+  body{
+    background-color: #E9E9E9;
+  }
   .topBar{
     background-color: #081F60;
     height: 65px;
