@@ -3,12 +3,12 @@
     <p class="subTitle">Transações disponíveis</p>
   <div class="btns row justify-between ">
     <div class="column  q-gutter-xl">
-      <Buttons class="btn" icon="chevron_left"  label="Saldo" />
+      <Buttons class="btn" icon="chevron_left"  label="Saldo" to='/saldo'/>
       <Buttons class="btn" icon="chevron_left" label="Pagamento" to='/Pagamento' />
     </div>
     <div class="column  q-gutter-xl">
-      <Buttons class="btn" icon-right="chevron_right"  label="Extrato" />
-      <Buttons class="btn" icon-right="chevron_right" label="Transferência" />
+      <Buttons class="btn" icon-right="chevron_right"  label="Extrato" to='/Extrato'/>
+      <Buttons class="btn" icon-right="chevron_right" label="Transferência" to='/Transferencia'/>
     </div>
   </div>
   <div class="warning">

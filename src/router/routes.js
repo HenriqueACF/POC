@@ -17,7 +17,10 @@ const routes = [
       { path: '/AguardandoPagamento', component:() => import('src/pages/pagamento/AguardandoPagamento.vue')},
       { path: '/PagamentoRealizado', component:() => import('src/pages/pagamento/PagamentoRealizado.vue')},
       //SALDO
-      { path: '/Saldo', component:()=> import('src/pages/saldo/Saldo.vue')},
+      { path: '/saldo', component:()=> import('src/pages/saldo/Saldo.vue')},
+      { path: '/saldoAtual', component:()=> import('src/pages/saldo/SaldoAtual.vue')},
+      { path: '/FinalizarOperacao', component: ()=> import('src/pages/saldo/OperacaoFinalizada.vue')},
+      { path: '/operacaoCancelada', component:()=> import('src/pages/saldo/OperacaoCancelada.vue')},
       //EXTRATO
       { path: '/Extrato', component:()=> import('src/pages/extrato/Extrato.vue')},
       //TRANSFERENCIA
