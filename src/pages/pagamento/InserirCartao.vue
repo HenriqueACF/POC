@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="warning">
-      <img class="img" src="../assets/cartao-fora.png" />
+      <img class="img" src="../../assets/cartao-fora.png" />
       <h5>
         Insira e retire seu cartão para <br />
         confirmar a operação.
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Buttons from "../components/Buttons.vue";
+import Buttons from "../../components/Buttons.vue";
 export default {
   components: {
     Buttons,

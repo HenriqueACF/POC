@@ -1,7 +1,7 @@
 <template>
   <div class="container">
       <div class="warning">
-          <img class="img" src="../assets/check.png"/>
+          <img class="img" src="../../assets/check.png"/>
           <h5>Pagamento realizado<br/>
               com sucesso.
           </h5>

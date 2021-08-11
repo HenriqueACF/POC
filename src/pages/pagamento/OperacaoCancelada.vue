@@ -1,25 +1,21 @@
 <template>
   <div class="container">
     <div class="warning">
-      <img class="img" src="../assets/banpara.png" />
+      <img class="img" src="../../assets/cancelar.png" />
+      <h4>Operação Cancelada!</h4>
       <h5>
-        Aguarde enquanto confirmamos <br />
-        o seu pagamento.
+        Aguarde, você será redirecionado à <br />
+        tela inicial em alguns segundos.
       </h5>
     </div>
   </div>
 </template>
 
 <script>
-import Buttons from "../components/Buttons.vue";
 export default {
-  components: {
-    Buttons,
-  },
-
   created() {
-    setTimeout(() => this.$router.push({ path: "/pagamentorealizado" }), 5000);
-  },
+    setTimeout(() => this.$router.push({ path: "/" }), 5000);
+  }
 };
 </script>
 
@@ -30,6 +26,7 @@ export default {
 }
 .warning {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #081f60;

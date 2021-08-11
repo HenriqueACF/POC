@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="dashboard">
-      <img class="cdg" src="../assets/codigo.jpeg" />
+      <img class="cdg" src="../../assets/codigo.jpeg" />
     </div>
     <div class="warning">
       <p class="p">
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Buttons from "../components/Buttons.vue";
+import Buttons from "../../components/Buttons.vue";
 export default {
   components: {
     Buttons,

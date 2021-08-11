@@ -2,7 +2,7 @@
   <div class="container">
     <p class="subTitle">Insira o código manualmente:</p>
     <div class="dashboard">
-      <img class="cdg" src="../assets/codigo.jpeg" />
+      <img class="cdg" src="../../assets/codigo.jpeg" />
     </div>
     <div class="input">
       <q-input class="inputs" filled v-model="codigo.n1"  />
@@ -23,7 +23,7 @@
 </template>
 
 <script scoped>
-import Buttons from "../components/Buttons.vue";
+import Buttons from "../../components/Buttons.vue";
 export default {
   components: {
     Buttons,

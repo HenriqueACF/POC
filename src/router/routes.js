@@ -5,16 +5,23 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') },
-      { path:'/Pagamento', component:() => import('pages/Pagamento.vue')},
-      { path:'/TipoPagamento', component:() => import('pages/TipoPagamento.vue')},
-      { path:'/SenhaPagamento', component:() => import('pages/SenhaPagamento.vue')},
-      { path:'/CodigoDeBarras', component:() => import('pages/CodigoDeBarras.vue')},
-      { path: '/SenhaCodigoDeBarras', component:() => import('pages/SenhaCodigoDeBarras.vue')},
-      { path: '/OperacaoCancelada', component:() => import('pages/OperacaoCancelada.vue')},
-      { path: '/ConfirmarPagamento', component:() => import('pages/ConfirmarPagamento.vue')},
-      { path: '/InserirCartao', component:() => import('pages/InserirCartao.vue')},
-      { path: '/AguardandoPagamento', component:() => import('pages/AguardandoPagamento.vue')},
-      { path: '/PagamentoRealizado', component:() => import('pages/PagamentoRealizado.vue')}
+      //PAGAMENTO
+      { path:'/Pagamento', component:() => import('src/pages/pagamento/Pagamento.vue')},
+      { path:'/TipoPagamento', component:() => import('src/pages/pagamento/TipoPagamento.vue')},
+      { path:'/SenhaPagamento', component:() => import('src/pages/pagamento/SenhaPagamento.vue')},
+      { path:'/CodigoDeBarras', component:() => import('src/pages/pagamento/CodigoDeBarras.vue')},
+      { path: '/SenhaCodigoDeBarras', component:() => import('src/pages/pagamento/SenhaCodigoDeBarras.vue')},
+      { path: '/OperacaoCancelada', component:() => import('src/pages/pagamento/OperacaoCancelada.vue')},
+      { path: '/ConfirmarPagamento', component:() => import('src/pages/pagamento/ConfirmarPagamento.vue')},
+      { path: '/InserirCartao', component:() => import('src/pages/pagamento/InserirCartao.vue')},
+      { path: '/AguardandoPagamento', component:() => import('src/pages/pagamento/AguardandoPagamento.vue')},
+      { path: '/PagamentoRealizado', component:() => import('src/pages/pagamento/PagamentoRealizado.vue')},
+      //SALDO
+      { path: '/Saldo', component:()=> import('src/pages/saldo/Saldo.vue')},
+      //EXTRATO
+      { path: '/Extrato', component:()=> import('src/pages/extrato/Extrato.vue')},
+      //TRANSFERENCIA
+      { path: '/Transferencia', component:()=> import('src/pages/transferencia/Transferencia.vue')}
     ]
   },
 

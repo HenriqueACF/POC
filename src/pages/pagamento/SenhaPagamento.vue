@@ -20,7 +20,7 @@
 
 <script>
 import { ref } from 'vue'
-import Buttons from '../components/Buttons.vue'
+import Buttons from '../../components/Buttons.vue'
 export default {
   components:{
     Buttons
