@@ -27,7 +27,10 @@ const routes = [
       { path: '/Transferencia', component:()=> import('src/pages/transferencia/Transferencia.vue')},
       { path:'/SenhaContaCorrente', component:()=>import('src/pages/transferencia/SenhaContaCorrente.vue')},
       { path: '/InformeContaCorrente', component:()=>import('src/pages/transferencia/InformeContaCorrente.vue')},
-      { path: '/ConfirmarContaCorrente', component:()=>import('src/pages/transferencia/ConfirmarContaCorrente.vue')}
+      { path: '/ConfirmarContaCorrente', component:()=>import('src/pages/transferencia/ConfirmarContaCorrente.vue')},
+      { path: '/InserirCartaoTransferencia', component:()=>import('src/pages/transferencia/InserirCartaoTransferencia')},
+      { path: '/AguardandoTransferencia', component:()=>import('src/pages/transferencia/AguardandoTransferencia.vue')},
+      { path: '/transferenciaFinalizada', component:()=>import('src/pages/transferencia/TransferenciaFinalizada.vue')}
     ]
   },
 

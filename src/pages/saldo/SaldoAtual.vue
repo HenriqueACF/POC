@@ -2,13 +2,13 @@
   <div class="container">
     <p class="subTitle">Este é seu saldo atual:</p>
     <div class="q-pa-xl q-mb-xl card">
-      <q-card dark bordered class="bg-grey-7 my-card">
+      <q-card  bordered class="bg-grey-4 my-card">
         <q-card-section class="cardUp">
           <div class="text-subtitle2">Total da conta: R$1.231,17</div>
           <div class="text-subtitle2">Saldo para o saque: R$1.231,17</div>
         </q-card-section>
 
-        <q-separator dark inset />
+        <q-separator inset />
 
         <q-card-section class="cardDown">
           <span><strong>Agência:</strong>47-Pedreira</span>

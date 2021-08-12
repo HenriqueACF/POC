@@ -2,22 +2,28 @@
   <div class="container">
     <p class="subTitle">Informe os dados favorecidos</p>
     <div class="box row justify-between">
-      <div class="input justify-between row">
-        <span>Agência</span><q-input outlined v-model="agencia"/> 
-        <span>Conta</span><q-input outlined v-model="conta" />
-        <span>Valor(R$)</span><q-input outlined v-model="valor"/>
+      <div class="input justify-between column">
+        <div class="row">
+          <span>Agência</span><q-input outlined v-model="agencia" />
+        </div>
+        <div class="row">
+          <span>Conta</span><q-input outlined v-model="conta" />
+        </div>
+        <div class="row">
+          <span>Valor(R$)</span><q-input outlined v-model="valor" />
+        </div>
       </div>
       <div class="column q-gutter-xl">
-        <q-card class="my-card-top">
+        <q-card class="my-card-top bg-grey-4">
           <q-card-section>
-              <span>Limite diario para a mesma titularidade</span>
-              <p>R$ 5.000,00</p>
+            <span>Limite diario para a mesma titularidade</span>
+            <p>R$ 5.000,00</p>
           </q-card-section>
         </q-card>
-        <q-card class="my-card-bottom">
+        <q-card class="my-card-bottom bg-grey-4">
           <q-card-section>
-              <span>Limite diario para diferente titularidade</span>
-              <p>R$ 1.000,00</p>
+            <span>Limite diario para diferente titularidade</span>
+            <p>R$ 1.000,00</p>
           </q-card-section>
         </q-card>
       </div>
@@ -30,18 +36,18 @@
       </p>
     </div>
     <div class="row justify-between">
-    <Buttons
-      style="margin-left: 2%"
-      icon="chevron_left"
-      label="Voltar"
-      to="/"
-    />
-    <Buttons
-      style="margin-right: 2%"
-      icon-right="chevron_right"
-      label="Confirmar"
-      to="/confirmarContaCorrente"
-    />
+      <Buttons
+        style="margin-left: 2%"
+        icon="chevron_left"
+        label="Voltar"
+        to="/"
+      />
+      <Buttons
+        style="margin-right: 2%"
+        icon-right="chevron_right"
+        label="Confirmar"
+        to="/confirmarContaCorrente"
+      />
     </div>
   </div>
 </template>
@@ -98,6 +104,13 @@ export default {
   margin-left: 2%;
   margin-top: 70px;
   margin-bottom: 60px;
+}
+
+span,
+p {
+  color: #081f60;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .p {
