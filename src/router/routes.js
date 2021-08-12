@@ -23,6 +23,13 @@ const routes = [
       { path: '/operacaoCancelada', component:()=> import('src/pages/saldo/OperacaoCancelada.vue')},
       //EXTRATO
       { path: '/Extrato', component:()=> import('src/pages/extrato/Extrato.vue')},
+      { path: '/ExtratoPeriodo', component:()=>import('src/pages/extrato/ExtratoPeriodo')},
+      { path: '/ExtratoTela', component:()=>import('src/pages/extrato/ExtratoTela.vue') },
+      { path: '/ImprimirExtrato', component:()=>import('src/pages/extrato/ImprimirExtrato.vue')},
+      { path: '/FinalizarExtrato', component:()=>import('src/pages/extrato/FinalizarExtrato.vue')},
+      { path: '/ExtratoFinalizado', component:()=>import('src/pages/extrato/ExtratoFinalizado.vue')},
+      { path: '/RealizarOperacao', component:()=>import('src/pages/extrato/RealizarOperacao.vue') },
+
       //TRANSFERENCIA
       { path: '/Transferencia', component:()=> import('src/pages/transferencia/Transferencia.vue')},
       { path:'/SenhaContaCorrente', component:()=>import('src/pages/transferencia/SenhaContaCorrente.vue')},

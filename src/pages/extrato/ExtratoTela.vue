@@ -1,16 +1,15 @@
 <template>
   <div class="container">
-    <p class="subTitle">Escolha uma opção de extrato:</p>
+    <p class="subTitle">Esse é o extrato do período solicitado:</p>
   <div class="btns row justify-between ">
     <div class="column  q-gutter-xl">
-      <Buttons class="btn" icon="chevron_left"  label="Tarifas" to=''/>
-      <Buttons class="btn" icon="chevron_left" label="Mês anterior" to=''/>
-      <Buttons class="btn" icon="chevron_left" label="Por período" to='/ExtratoPeriodo'/>
-      <Buttons class="btn" icon="chevron_left" label="Voltar" to=''/>
+      <Buttons class="btn" icon="keyboard_arrow_up"/>
+      <Buttons class="btn" icon="keyboard_arrow_down" />
+      <Buttons class="btn" icon="chevron_left" label="Editar período" to='/ExtratoPeriodo'/>
+      <Buttons class="btn" icon="chevron_left" label="Imprimir" to='/ImprimirExtrato'/>
     </div>
     <div class="column  q-gutter-xl">
-      <Buttons class="btn" icon-right="chevron_right"  label="Mês atual" to=''/>
-      <Buttons class="btn" icon-right="chevron_right" label="Últimos lançamentos" to=''/>
+      <Buttons class="btn" icon-right="chevron_right" label="Finalizar operação" to='/Finalizarextrato'/>
     </div>
   </div>
   </div>

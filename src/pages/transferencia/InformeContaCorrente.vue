@@ -1,16 +1,16 @@
 <template>
   <div class="container">
     <p class="subTitle">Informe os dados favorecidos</p>
-    <div class="box row justify-between">
-      <div class="input justify-between column">
+    <div class="box row justify-around">
+      <div class="input justify-around column" style="width:50vw">
         <div class="row">
-          <span>Agência</span><q-input outlined v-model="agencia" />
+          <span style="font-size:25px; margin-right:20px">Agência</span><q-input outlined v-model="agencia" />
         </div>
         <div class="row">
-          <span>Conta</span><q-input outlined v-model="conta" />
+          <span style="font-size:25px; margin-right:45px">Conta</span><q-input outlined v-model="conta" />
         </div>
         <div class="row">
-          <span>Valor(R$)</span><q-input outlined v-model="valor" />
+          <span style="font-size:25px">Valor(R$)</span><q-input outlined v-model="valor" />
         </div>
       </div>
       <div class="column q-gutter-xl">

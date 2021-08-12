@@ -1,9 +1,15 @@
 <template>
   <div class="container">
     <p class="subTitle">Selecione um produto:</p>
-    <div class="table" >
-      <div class="q-pa-md" style="width:50vw">
-        <q-table class="bg-grey-4" :rows="rows" :columns="columns" row-key="name" />
+    <div class="table">
+      <div class="q-pa-md" style="width: 50vw">
+        <q-table
+          class="bg-grey-4"
+          :rows="rows"
+          :columns="columns"
+          row-key="name"
+          hide-bottom
+        />
       </div>
 
       <div class="btn">
