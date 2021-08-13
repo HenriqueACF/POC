@@ -19,7 +19,7 @@ const routes = [
       //SALDO
       { path: '/saldo', component:()=> import('src/pages/saldo/Saldo.vue')},
       { path: '/saldoAtual', component:()=> import('src/pages/saldo/SaldoAtual.vue')},
-      { path: '/FinalizarOperacao', component: ()=> import('src/pages/saldo/OperacaoFinalizada.vue')},
+      { path: '/OperacaoFinalizada', component: ()=> import('src/pages/saldo/OperacaoFinalizada.vue')},
       { path: '/operacaoCancelada', component:()=> import('src/pages/saldo/OperacaoCancelada.vue')},
       //EXTRATO
       { path: '/Extrato', component:()=> import('src/pages/extrato/Extrato.vue')},
@@ -30,6 +30,7 @@ const routes = [
       { path: '/ExtratoFinalizado', component:()=>import('src/pages/extrato/ExtratoFinalizado.vue')},
       { path: '/RealizarOperacao', component:()=>import('src/pages/extrato/RealizarOperacao.vue') },
       { path: '/ExtratoNegado', component:()=>import('src/pages/extrato/ExtratoNegado.vue')},
+      { path: '/Final', component:()=>import('src/pages/extrato/Final.vue')},
 
       //TRANSFERENCIA
       { path: '/Transferencia', component:()=> import('src/pages/transferencia/Transferencia.vue')},
@@ -38,7 +39,8 @@ const routes = [
       { path: '/ConfirmarContaCorrente', component:()=>import('src/pages/transferencia/ConfirmarContaCorrente.vue')},
       { path: '/InserirCartaoTransferencia', component:()=>import('src/pages/transferencia/InserirCartaoTransferencia')},
       { path: '/AguardandoTransferencia', component:()=>import('src/pages/transferencia/AguardandoTransferencia.vue')},
-      { path: '/transferenciaFinalizada', component:()=>import('src/pages/transferencia/TransferenciaFinalizada.vue')}
+      { path: '/transferenciaFinalizada', component:()=>import('src/pages/transferencia/TransferenciaFinalizada.vue')},
+      { path: '/transferenciaCancelada', component:()=>import('src/pages/transferencia/TransferenciaCancelada.vue')}
     ]
   },
 

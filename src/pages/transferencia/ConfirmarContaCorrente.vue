@@ -11,14 +11,14 @@
 
         <q-card-section class="cardSection">
           <div class="cardSection2">
-            <div class="text-h6"><strong>Agência: </strong>47-Pedreira</div>
+            <div class="text-h6"><strong>Agência: </strong>{{agencia}}</div>
             <q-space/>
-            <div class="text-h6"><strong>Favorecido: </strong>Vincente José Malheiros da Fonseca Filho</div>
+            <div class="text-h6"><strong>Favorecido: </strong>{{favorecido}}</div>
           </div>
           <div class="cardSection2">
-            <div class="text-h6"><strong>Conta</strong>435325</div>
+            <div class="text-h6"><strong>Conta</strong>{{conta}}</div>
             <q-space/>
-            <div class="text-h6"><strong>Valor:</strong>R$35,00</div>
+            <div class="text-h6"><strong>Valor:</strong>{{valor}}</div>
           </div>
         </q-card-section>
       </q-card>
@@ -46,7 +46,10 @@ export default {
   },
   setup() {
     return {
-      
+      agencia:'Pedreira',
+      favorecido: 'Vincente José Malheiros da Fonseca Filho',
+      conta:'435325',
+      valor:'R$35,00'
     };
   },
 };

@@ -91,8 +91,6 @@ export default {
   data() {
     return {
       slide: ref("page1"),
-      lorem:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatem totam, architecto cupiditate officia rerum, error dignissimos praesentium libero ab nemo.",
     };
   },
 };
@@ -100,7 +98,7 @@ export default {
 
 <style scoped>
 .container {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .subTitle {

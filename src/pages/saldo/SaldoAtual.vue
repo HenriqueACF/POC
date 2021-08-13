@@ -4,19 +4,18 @@
     <div class="q-pa-xl q-mb-xl card">
       <q-card  bordered class="bg-grey-4 my-card">
         <q-card-section class="cardUp">
-          <div class="text-subtitle2">Total da conta: R$1.231,17</div>
-          <div class="text-subtitle2">Saldo para o saque: R$1.231,17</div>
+          <div class="text-subtitle2">Total da conta: R${{totalConta}}</div>
+          <div class="text-subtitle2">Saldo para o saque: R${{saldoSaque}}</div>
         </q-card-section>
 
         <q-separator inset />
 
         <q-card-section class="cardDown">
-          <span><strong>Agência:</strong>47-Pedreira</span>
-          <span><strong>Conta:</strong>435325-Vicente José Malheiros da Fonseca Filho</span>
+          <span><strong>Agência:</strong> {{agencia}}</span>
+          <span><strong>Conta:</strong>{{cConta}} - {{cNome}}</span>
         </q-card-section>
       </q-card>
     </div>
-  </div>
   <div class="btns row justify-between">
     <div class="column  q-gutter-sm">
       <Buttons class="btn" style="margin-bottom:20px" icon="chevron_left"  label="Exibir saldo detalhado" to=''/>
@@ -24,8 +23,9 @@
     </div>
     <div class="column  q-gutter-sm">
       <Buttons class="btn" style="margin-bottom:20px" icon-right="chevron_right"  label="Saque" to=''/>
-      <Buttons class="btn" icon-right="chevron_right" label="Finalizar operação" to='/FinalizarOperacao'/>
+      <Buttons class="btn" icon-right="chevron_right" label="Finalizar operação" to='/operacaoFinalizada'/>
     </div>
+  </div>
   </div>
 </template>
 
@@ -37,6 +37,14 @@ export default {
   },
   data() {
     return {
+      //Variaveis
+      totalConta:'1.232,17',
+      saldoSaque:'1.213,17',
+      agencia:'Pedreira',
+      cConta:'435325',
+      cNome:'Vicente José Malheiros da Fonseca Filho',
+
+      //Tabela
       columns: [
         {
           name: "name",

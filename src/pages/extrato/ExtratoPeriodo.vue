@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    <div class="row justify-between" style="margin-top:300px">
+    <div class="row justify-between" style="margin-top:280px">
       <Buttons
         style="margin-left: 2%"
         icon="chevron_left"

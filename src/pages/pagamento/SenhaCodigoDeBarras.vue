@@ -5,7 +5,7 @@
       <img class="cdg" src="../../assets/codigo.jpeg" />
     </div>
     <div class="input">
-      <q-input class="inputs" filled v-model="codigo.n1"  />
+      <q-input class="inputs" filled v-model="codigo.n1" />
       <q-input class="inputs" filled v-model="codigo.n2"  />
       <q-input class="inputs" filled v-model="codigo.n3"  />
       <q-input class="inputs menor" filled v-model="codigo.n4"  />

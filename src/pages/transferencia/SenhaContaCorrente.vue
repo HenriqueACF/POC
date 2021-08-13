@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <p class="subTitle">Digite a sua senha:</p>
-    <q-input class="input" filled v-model="text" type="password"/>
+    <q-input class="input" filled v-model="password" type="password"/>
     <div class="dashboard">
         <div class="warning">
           <p>
@@ -27,7 +27,7 @@ export default {
   },
   setup () {
     return {
-      text: ref('')
+      password:'',
     }
   }
 }

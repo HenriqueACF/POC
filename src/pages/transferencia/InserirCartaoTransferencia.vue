@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container column">
     <div class="warning">
       <img class="img" src="../../assets/cartao-fora.png" />
       <h5>
@@ -7,13 +7,13 @@
         confirmar a operação.
       </h5>
     </div>
+    <Buttons
+      class="btn"
+      texto="Cancelar"
+      icone="chevron_left"
+      to="/transferenciaCancelada"
+    />
   </div>
-  <Buttons
-    class="btn"
-    texto="Cancelar"
-    icone="chevron_left"
-    to="/transferenciaCancelada"
-  />
 </template>
 
 <script>
@@ -23,7 +23,10 @@ export default {
     Buttons,
   },
   created() {
-    setTimeout(() => this.$router.push({ path: "/aguardandoTransferencia" }), 5000);
+    setTimeout(
+      () => this.$router.push({ path: "/aguardandoTransferencia" }),
+      5000
+    );
   },
 };
 </script>

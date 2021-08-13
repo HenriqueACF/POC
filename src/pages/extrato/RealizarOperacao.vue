@@ -8,12 +8,12 @@
       <div class="buttons">
         <Buttons
           texto="Sim"
-          icon-right="chevron_right"
+          icone="chevron_left"
           to="/"
         />
         <Buttons
           texto="Não"
-          icone="chevron_left"
+          icon-right="chevron_right"
           to="/Final"
         />
       </div>

@@ -6,7 +6,7 @@
       <Buttons class="btn" icon="chevron_left"  label="Tarifas" to=''/>
       <Buttons class="btn" icon="chevron_left" label="Mês anterior" to=''/>
       <Buttons class="btn" icon="chevron_left" label="Por período" to='/ExtratoPeriodo'/>
-      <Buttons class="btn" icon="chevron_left" label="Voltar" to=''/>
+      <Buttons class="btn" icon="chevron_left" label="Voltar" to='/'/>
     </div>
     <div class="column  q-gutter-xl">
       <Buttons class="btn" icon-right="chevron_right"  label="Mês atual" to=''/>
@@ -27,7 +27,7 @@ export default {
 
 <style scoped>
 .container {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .subTitle {

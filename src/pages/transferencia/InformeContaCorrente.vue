@@ -17,13 +17,13 @@
         <q-card class="my-card-top bg-grey-4">
           <q-card-section>
             <span>Limite diario para a mesma titularidade</span>
-            <p>R$ 5.000,00</p>
+            <p>{{limiteTitular}}</p>
           </q-card-section>
         </q-card>
         <q-card class="my-card-bottom bg-grey-4">
           <q-card-section>
             <span>Limite diario para diferente titularidade</span>
-            <p>R$ 1.000,00</p>
+            <p>{{limiteDiferente}}</p>
           </q-card-section>
         </q-card>
       </div>
@@ -63,6 +63,8 @@ export default {
       agencia: "",
       conta: "",
       valor: "",
+      limiteTitular: 'R$ 5.000,00',
+      limiteDiferente:'R$ 1.000,00'
     };
   },
 };
@@ -103,7 +105,7 @@ export default {
   width: 510px;
   margin-left: 2%;
   margin-top: 70px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 span,

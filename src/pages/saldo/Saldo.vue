@@ -17,10 +17,10 @@
         <Buttons icone="keyboard_arrow_down" />
       </div>
     </div>
-  </div>
-  <div class="btns">
-    <Buttons texto="Voltar" icone="chevron_left" to="/" />
-    <Buttons texto="Confirmar" icon-right="chevron_right" to="/saldoatual" />
+    <div class="btns">
+      <Buttons texto="Voltar" icone="chevron_left" to="/" />
+      <Buttons texto="Confirmar" icon-right="chevron_right" to="/saldoatual" />
+    </div>
   </div>
 </template>
 
@@ -83,13 +83,13 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 180px;
+  margin-bottom: 200px;
 }
 
 .btn {
-  margin-bottom: 60px;
   margin-right: 2%;
-}
+  margin-bottom: 40px;
+  }
 
 .btns {
   display: flex;

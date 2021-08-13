@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <p class="subTitle">Digite a sua senha:</p>
-    <q-input class="input" filled v-model="text" type="password"/>
+    <q-input class="input" filled v-model="password" type="password" max-lenght="8"/>
     <div class="dashboard">
         <div class="warning">
           <p>
@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import { ref } from 'vue'
 import Buttons from '../../components/Buttons.vue'
 export default {
   components:{
@@ -27,7 +26,7 @@ export default {
   },
   setup () {
     return {
-      text: ref('')
+      password:''
     }
   }
 }

@@ -11,12 +11,12 @@
 
         <q-card-section class="cardSection">
           <div class="text-h6">
-            Código de Barras: 0000000 0000000 0000000 0 0000000
+            Código de Barras:{{codigoDeBarras}}
           </div>
           <div class="cardSection2">
-            <div class="text-h6">Equatorial Energia</div>
+            <div class="text-h6">{{nomeBoleto}}</div>
             <q-space/>
-            <div class="text-h6">Valor:R$246,00</div>
+            <div class="text-h6">Valor: R${{valor}}</div>
           </div>
         </q-card-section>
       </q-card>
@@ -37,7 +37,6 @@
 </template>
 
 <script>
-import { ref } from "vue";
 import Buttons from "../../components/Buttons.vue";
 export default {
   components: {
@@ -45,7 +44,9 @@ export default {
   },
   setup() {
     return {
-      text: ref(""),
+      codigoDeBarras:'0000000 0000000 0000000 0 0000000',
+      valor:'246,00',
+      nomeBoleto:'Equatorial Energia'
     };
   },
 };
