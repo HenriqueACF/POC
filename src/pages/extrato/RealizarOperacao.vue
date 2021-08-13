@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <p class="subTitle"></p>
     <div class="dashboard">
         <div class="middle">
             <h4>Deseja realizar mais uma operação?</h4>
@@ -31,9 +30,6 @@ export default {
     return {
       
     };
-  },
-  created() {
-    setTimeout(() => this.$router.push({ path: "/trans" }), 5000);
   }
 };
 </script>
@@ -58,25 +54,10 @@ export default {
   justify-content: center;
 }
 
-.card{
-    width: 70vw;
-    height: 200px;
-    margin-bottom: 120px;
-    color: #081f60;
-}
-
-.cardSection2{
-  display: flex;
-}
-
 .buttons {
   display: flex;
   justify-content: space-between;
   margin-left: 2%;
   margin-right: 2%;
-}
-
-.btn{
-  width: 400px;
 }
 </style>

@@ -29,6 +29,7 @@ const routes = [
       { path: '/FinalizarExtrato', component:()=>import('src/pages/extrato/FinalizarExtrato.vue')},
       { path: '/ExtratoFinalizado', component:()=>import('src/pages/extrato/ExtratoFinalizado.vue')},
       { path: '/RealizarOperacao', component:()=>import('src/pages/extrato/RealizarOperacao.vue') },
+      { path: '/ExtratoNegado', component:()=>import('src/pages/extrato/ExtratoNegado.vue')},
 
       //TRANSFERENCIA
       { path: '/Transferencia', component:()=> import('src/pages/transferencia/Transferencia.vue')},
