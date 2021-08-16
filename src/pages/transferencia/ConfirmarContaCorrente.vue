@@ -27,11 +27,13 @@
         <Buttons
           texto="Não"
           icone="chevron_left"
+          @click="nao"
           to="/InformeContaCorrente"
         />
         <Buttons
           texto="Sim"
           icon-right="chevron_right"
+          @click="sim"
           to="/inserirCartaoTransferencia"
         />
       </div>
@@ -52,6 +54,14 @@ export default {
       valor:'R$35,00'
     };
   },
+  methods:{
+    nao(){
+      this.$router.push('/InformeContaCorrente')
+    },
+    sim(){
+      this.$router.push('/InserirCartaoTransferencia')
+    }
+  }
 };
 </script>
 

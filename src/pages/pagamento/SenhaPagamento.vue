@@ -10,8 +10,8 @@
           </p>
         </div>
         <div class="buttons">
-          <Buttons texto="Cancelar" icone='chevron_left' to='/operacaoCancelada' class="btn" />
-          <Buttons texto="Confirmar" icon-right="chevron_right" to='/codigoDeBarras' class="btn"/>
+          <Buttons texto="Cancelar" icone='chevron_left' class="btn" @click="cancelar" />
+          <Buttons texto="Confirmar" icon-right="chevron_right" class="btn" @click="confirmar"/>
         </div>
     </div>
   </div>
@@ -27,6 +27,14 @@ export default {
   setup () {
     return {
       password:''
+    }
+  },
+  methods:{
+    confirmar(){
+      this.$router.push('/codigoDeBarras')
+    },
+    cancelar(){
+      this.$router.push('/operacaoCancelada')
     }
   }
 }

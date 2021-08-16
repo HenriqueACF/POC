@@ -25,12 +25,12 @@
         <Buttons
           texto="Não"
           icone="chevron_left"
-          to="/SenhaCodigoDeBarras"
+          @click="senha"
         />
         <Buttons
           texto="Sim"
           icon-right="chevron_right"
-          to="/inserirCartao"
+          @click="inserirCartao"
         />
       </div>
   </div>
@@ -49,6 +49,14 @@ export default {
       nomeBoleto:'Equatorial Energia'
     };
   },
+  methods:{
+    senha(){
+      this.$router.push('/SenhaCodigoDeBarras')
+    },
+    inserirCartao(){
+      this.$router.push('/inserirCartao')
+    }
+  }
 };
 </script>
 

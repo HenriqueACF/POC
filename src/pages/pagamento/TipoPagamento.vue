@@ -3,7 +3,7 @@
     <p class="subTitle">Escolha o tipo de pagamento:</p>
   </div>
   <div class="btns">
-    <Buttons texto="Convênio" to="/senhapagamento" icone='chevron_left' class="btn"/>
+    <Buttons texto="Convênio" icone='chevron_left' class="btn" @click="convenio"/>
     <Buttons texto="Reimpressão de comprovante" icone='chevron_left' class="btn"/>
     <Buttons texto="Voltar" icone='chevron_left' to='/pagamento' class="btn" />
   </div>
@@ -14,6 +14,11 @@ import Buttons from '../../components/Buttons.vue'
 export default {    
     components:{
         Buttons
+    },
+    methods:{
+      convenio(){
+        this.$router.push('/senhapagamento')
+      }
     }
 }
 </script>

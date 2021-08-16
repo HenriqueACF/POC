@@ -17,7 +17,7 @@
           abaixo da tecla para digitar código.
         </p>
       </div>
-      <Buttons class="btn" texto='Confirmar' icon-right='chevron_right' to='/ConfirmarPagamento'/>
+      <Buttons class="btn" texto='Confirmar' icon-right='chevron_right' @click="confirmar"/>
     </div>
   </div>
 </template>
@@ -38,6 +38,11 @@ export default {
               n5:''
           }
       }
+  },
+  methods:{
+    confirmar(){
+      this.$router.push('/confirmarPagamento')
+    }
   }
 }
 </script>

@@ -11,12 +11,8 @@
 </template>
 
 <script>
-import Buttons from "../../components/Buttons.vue";
 export default {
-  components: {
-    Buttons,
-  },
-
+  components: {},
   created() {
     setTimeout(() => this.$router.push({ path: "/" }), 5000);
   },

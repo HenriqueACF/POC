@@ -3,14 +3,14 @@
     <p class="subTitle">Escolha uma opção de extrato:</p>
   <div class="btns row justify-between ">
     <div class="column  q-gutter-xl">
-      <Buttons class="btn" icon="chevron_left"  label="Tarifas" to=''/>
-      <Buttons class="btn" icon="chevron_left" label="Mês anterior" to=''/>
-      <Buttons class="btn" icon="chevron_left" label="Por período" to='/ExtratoPeriodo'/>
-      <Buttons class="btn" icon="chevron_left" label="Voltar" to='/'/>
+      <Buttons class="btn" icon="chevron_left"  label="Tarifas"/>
+      <Buttons class="btn" icon="chevron_left" label="Mês anterior"/>
+      <Buttons class="btn" icon="chevron_left" label="Por período" @click="extratoPeriodo"/>
+      <Buttons class="btn" icon="chevron_left" label="Voltar" @click="voltar"/>
     </div>
     <div class="column  q-gutter-xl">
-      <Buttons class="btn" icon-right="chevron_right"  label="Mês atual" to=''/>
-      <Buttons class="btn" icon-right="chevron_right" label="Últimos lançamentos" to=''/>
+      <Buttons class="btn" icon-right="chevron_right"  label="Mês atual"/>
+      <Buttons class="btn" icon-right="chevron_right" label="Últimos lançamentos"/>
     </div>
   </div>
   </div>
@@ -22,6 +22,14 @@ export default {
   components: {
     Buttons,
   },
+  methods:{
+    extratoPeriodo(){
+      this.$router.push('/ExtratoPeriodo')
+    },
+    voltar(){
+      this.$router.push('/')
+    }
+  }
 };
 </script>
 

@@ -40,13 +40,13 @@
         style="margin-left: 2%"
         icon="chevron_left"
         label="Voltar"
-        to="/"
+        @click="voltar"
       />
       <Buttons
         style="margin-right: 2%"
         icon-right="chevron_right"
         label="Confirmar"
-        to="/confirmarContaCorrente"
+        @click="confirmar"
       />
     </div>
   </div>
@@ -67,6 +67,14 @@ export default {
       limiteDiferente:'R$ 1.000,00'
     };
   },
+  methods:{
+    voltar(){
+      this.$router.push('/')
+    },
+    confirmar(){
+      this.$router.push('/confirmarContaCorrente')
+    }
+  }
 };
 </script>
 

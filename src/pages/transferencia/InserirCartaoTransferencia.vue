@@ -11,7 +11,7 @@
       class="btn"
       texto="Cancelar"
       icone="chevron_left"
-      to="/transferenciaCancelada"
+      @click="cancelar"
     />
   </div>
 </template>
@@ -28,6 +28,11 @@ export default {
       5000
     );
   },
+  methods:{
+    cancelar(){
+      this.$router.push('/transferenciaCancelada')
+    }
+  }
 };
 </script>
 

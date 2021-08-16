@@ -3,8 +3,8 @@
     <p class="subTitle">Escolha o tipo de pagamento:</p>
   </div>
   <div class="btns">
-    <Buttons class="btn" texto="CONVÊNIO/DARF/REIMPRESSÃO" icone='chevron_left' to='/tipoPagamento' />
-    <Buttons texto="Voltar" icone='chevron_left' to='/' />
+    <Buttons class="btn" texto="CONVÊNIO/DARF/REIMPRESSÃO" icone='chevron_left' @click="tipoPagamento" />
+    <Buttons texto="Voltar" icone='chevron_left' @click="voltar" />
   </div>
 </template>
 
@@ -13,6 +13,14 @@ import Buttons from '../../components/Buttons.vue'
 export default {    
     components:{
         Buttons
+    },
+    methods:{
+      voltar(){
+        this.$router.push('/')
+      },
+      tipoPagamento(){
+        this.$router.push('/tipoPagamento')
+      }
     }
 }
 </script>

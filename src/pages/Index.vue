@@ -3,12 +3,12 @@
     <p class="subTitle">Transações disponíveis</p>
   <div class="btns row justify-between ">
     <div class="column  q-gutter-xl">
-      <Buttons class="btn" icon="chevron_left"  label="Saldo" to='/saldo'/>
-      <Buttons class="btn" icon="chevron_left" label="Pagamento" to='/Pagamento' />
+      <Buttons class="btn" icon="chevron_left"  label="Saldo" @click="saldo"/>
+      <Buttons class="btn" icon="chevron_left" label="Pagamento" @click="pagamento"/>
     </div>
     <div class="column  q-gutter-xl">
-      <Buttons class="btn" icon-right="chevron_right"  label="Extrato" to='/Extrato'/>
-      <Buttons class="btn" icon-right="chevron_right" label="Transferência" to='/Transferencia'/>
+      <Buttons class="btn" icon-right="chevron_right"  label="Extrato" @click="extrato"/>
+      <Buttons class="btn" icon-right="chevron_right" label="Transferência" @click="transferencia"/>
     </div>
   </div>
   <div class="warning">
@@ -27,6 +27,20 @@ export default {
   components: {
     Buttons,
   },
+  methods:{
+    saldo(){
+      this.$router.push('/saldo')
+    },
+    pagamento(){
+      this.$router.push('/pagamento')
+    },
+    extrato(){
+      this.$router.push('/extrato')
+    },
+    transferencia(){
+      this.$router.push('/transferencia')
+    }
+  }
 };
 </script>
 

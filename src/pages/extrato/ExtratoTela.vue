@@ -9,13 +9,13 @@
           class="btn"
           icon="chevron_left"
           label="Editar período"
-          to="/ExtratoPeriodo"
+          @click="editarPeriodo"
         />
         <Buttons
           class="btn"
           icon="chevron_left"
           label="Imprimir"
-          to="/ImprimirExtrato"
+          @click="imprimirExtrato"
         />
       </div>
       <div class="column q-gutter-xl">
@@ -38,8 +38,8 @@
             <q-carousel-slide name="page1" class="column no-wrap flex-center">
               <q-icon name="receipt" size="56px" />
               <div class="q-mt-sm">
-                <span>BANPARÁ | AGÊNCIA - 47 - PEDREIRA | CONTA:435325 - Vincente José Malheiros da Fonseca Filho</span>
-                <span>Extrato para simples conferência | Expedido em 23/07/2021 às 14:36</span>
+                <span>BANPARÁ | AGÊNCIA - {{agencia}} | CONTA:{{conta}} - {{nome}}</span>
+                <span>Extrato para simples conferência | Expedido em {{data}} às {{hora}}</span>
               </div>
             </q-carousel-slide>
             <q-carousel-slide name="page2" class="column no-wrap flex-center">
@@ -74,7 +74,7 @@
           class="btn"
           icon-right="chevron_right"
           label="Finalizar operação"
-          to="/Finalizarextrato"
+          @click="finalizarExtrato"
         />
       </div>
     </div>
@@ -91,8 +91,24 @@ export default {
   data() {
     return {
       slide: ref("page1"),
+      agencia:'Pedreira',
+      conta: '435325',
+      nome:'Vincente José Malheiros da Fonseca Filho',
+      data:'23/07/2021',
+      hora:'14:36'
     };
   },
+  methods: {
+    editarPeriodo () {
+      this.$router.push('/ExtratoPeriodo')
+    },
+    imprimirExtrato(){
+      this.$router.push('/ImprimirExtrato')
+    },
+    finalizarExtrato(){
+      this.$router.push('/Finalizarextrato')
+    }
+  }
 };
 </script>
 

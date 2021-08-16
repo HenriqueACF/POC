@@ -18,8 +18,8 @@
       </div>
     </div>
     <div class="btns">
-      <Buttons texto="Voltar" icone="chevron_left" to="/" />
-      <Buttons texto="Confirmar" icon-right="chevron_right" to="/saldoatual" />
+      <Buttons texto="Voltar" icone="chevron_left" @click="voltar"/>
+      <Buttons texto="Confirmar" icon-right="chevron_right" @click="confirmar" />
     </div>
   </div>
 </template>
@@ -63,6 +63,14 @@ export default {
       ],
     };
   },
+  methods:{
+    voltar(){
+      this.$router.push('/')
+    },
+    confirmar(){
+      this.$router.push('/saldoAtual')
+    }
+  }
 };
 </script>
 

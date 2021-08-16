@@ -2,7 +2,7 @@
   <div class="container">
     <p class="subTitle">Escolha a modalidade de transferência</p>
   <div class="btns row justify-between ">
-      <Buttons class="btn" icon="chevron_left"  label="Conta Corrente > Conta Corrente" to='/senhaContaCorrente'/>
+      <Buttons class="btn" icon="chevron_left"  label="Conta Corrente > Conta Corrente" @click="contaCorrente"/>
       <Buttons class="btn" icon-right="chevron_right" label="Conta Corrente > Conta Poupança"  />
   </div>
   <div class="warning">
@@ -12,7 +12,7 @@
       <strong>Utilize os botões laterais.</strong>
     </p>
   </div>
-  <Buttons style="margin-left:2%" icon='chevron_left' label="Voltar" to="/" />
+  <Buttons style="margin-left:2%" icon='chevron_left' label="Voltar" @click="voltar"/>
   </div>
 </template>
 
@@ -22,6 +22,14 @@ export default {
   components: {
     Buttons,
   },
+  methods:{
+    contaCorrente(){
+      this.$router.push('/senhaContaCorrente')
+    },
+    voltar(){
+      this.$router.push('/')
+    }
+  }
 };
 </script>
 

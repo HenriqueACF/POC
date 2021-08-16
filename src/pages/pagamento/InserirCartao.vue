@@ -12,7 +12,7 @@
     class="btn"
     texto="Cancelar"
     icone="chevron_left"
-    to="/operacaoCancelada"
+    @click="cancelar"
   />
 </template>
 
@@ -24,6 +24,11 @@ export default {
   },
   created() {
     setTimeout(() => this.$router.push({ path: "/aguardandopagamento" }), 5000);
+  },
+  methods: {
+    cancelar() {
+      this.$router.push("/operacaoCancelada");
+    },
   },
 };
 </script>

@@ -9,12 +9,12 @@
         <Buttons
           texto="Sim"
           icone="chevron_left"
-          to="/"
+          @click="sim"
         />
         <Buttons
           texto="Não"
           icon-right="chevron_right"
-          to="/Final"
+          @click="nao"
         />
       </div>
   </div>
@@ -27,9 +27,15 @@ export default {
     Buttons,
   },
   setup() {
-    return {
-      
-    };
+    return {};
+  },
+  methods:{
+    sim(){
+      this.$router.push('/')
+    },
+    nao(){
+      this.$router.push('/final')
+    }
   }
 };
 </script>

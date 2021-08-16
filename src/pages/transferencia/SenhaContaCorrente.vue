@@ -10,8 +10,8 @@
           </p>
         </div>
         <div class="buttons">
-          <Buttons texto="Cancelar" icone='chevron_left' to='/transferencia' class="btn" />
-          <Buttons texto="Confirmar" icon-right="chevron_right" to='/informecontacorrente' class="btn"/>
+          <Buttons texto="Cancelar" icone='chevron_left' class="btn" @click="cancelar"/>
+          <Buttons texto="Confirmar" icon-right="chevron_right" class="btn" @click="confirmar"/>
         </div>
     </div>
   </div>
@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import { ref } from 'vue'
 import Buttons from '../../components/Buttons.vue'
 export default {
   components:{
@@ -28,6 +27,14 @@ export default {
   setup () {
     return {
       password:'',
+    }
+  },
+  methods:{
+    cancelar(){
+      this.$router.push('/transferencia')
+    },
+    confirmar(){
+      this.$router.push('informeContaCorrente')
     }
   }
 }

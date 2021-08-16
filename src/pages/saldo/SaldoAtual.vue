@@ -1,7 +1,20 @@
 <template>
   <div class="container">
     <p class="subTitle">Este é seu saldo atual:</p>
-    <div class="q-pa-xl q-mb-xl card">
+    <div class="justify-between row">    
+    <div class="column q-pa-xl q-mb-xl">
+      <q-card  bordered class="bg-grey-4 my-card">
+        <q-card-section class="column">
+          <p class="">Limite: R${{limite}}</p>
+          <p class="">Limite Bloqueado: R${{LBloqueado}}</p>
+          <p class="">Limite utilizado: R${{LUtilizado}}</p>
+          <p class="">Compras: R${{Compras}}</p>
+          <p class="">Limite Disponivel: R${{LDisponivel}}</p>
+        </q-card-section>
+      </q-card>
+    </div>
+    
+    <div class="column q-pa-xl q-mb-xl card">
       <q-card  bordered class="bg-grey-4 my-card">
         <q-card-section class="cardUp">
           <div class="text-subtitle2">Total da conta: R${{totalConta}}</div>
@@ -16,14 +29,15 @@
         </q-card-section>
       </q-card>
     </div>
+    </div>
   <div class="btns row justify-between">
     <div class="column  q-gutter-sm">
-      <Buttons class="btn" style="margin-bottom:20px" icon="chevron_left"  label="Exibir saldo detalhado" to=''/>
-      <Buttons class="btn" icon="chevron_left" label="Voltar" to='/saldo' />
+      <Buttons class="btn" style="margin-bottom:10px" icon="chevron_left"  label="Exibir saldo detalhado"/>
+      <Buttons class="btn" icon="chevron_left" label="Voltar" @click="voltar" />
     </div>
     <div class="column  q-gutter-sm">
-      <Buttons class="btn" style="margin-bottom:20px" icon-right="chevron_right"  label="Saque" to=''/>
-      <Buttons class="btn" icon-right="chevron_right" label="Finalizar operação" to='/operacaoFinalizada'/>
+      <Buttons class="btn" style="margin-bottom:10px" icon-right="chevron_right"  label="Saque"/>
+      <Buttons class="btn" icon-right="chevron_right" label="Finalizar operação" @click="finalizar"/>
     </div>
   </div>
   </div>
@@ -43,45 +57,27 @@ export default {
       agencia:'Pedreira',
       cConta:'435325',
       cNome:'Vicente José Malheiros da Fonseca Filho',
-
-      //Tabela
-      columns: [
-        {
-          name: "name",
-          required: true,
-          label: "Produto",
-          align: "left",
-          field: (row) => row.name,
-          format: (val) => `${val}`,
-        },
-        {
-          name: "agencia",
-          align: "center",
-          label: "Agência",
-          field: "agencia",
-        },
-        { name: "conta", label: "Conta", field: "conta" },
-      ],
-      rows: [
-        {
-          name: "Conta Corrente",
-          agencia: "47-Pedreira",
-          conta: "435325",
-        },
-        {
-          name: "Conta Poupnaça",
-          agencia: "15-Senador L",
-          conta: "1852455",
-        },
-      ],
+      limite:'1.000,00',
+      LBloqueado:'500,00',
+      LUtilizado:'300,00',
+      Compras:'100,00',
+      LDisponivel:'600,00'
     };
   },
+  methods:{
+    voltar(){
+      this.$router.push('/saldo')
+    },
+    finalizar(){
+      this.$router.push('/operacaoFinalizada')
+    }
+  }
 };
 </script>
 
 <style scoped>
 .container {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .subTitle {
@@ -98,7 +94,7 @@ export default {
 }
 
 .my-card{
-    width: 900px;
+    width: 42vw;
 }
 
 .cardUp{

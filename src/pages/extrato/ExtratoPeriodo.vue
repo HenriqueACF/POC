@@ -16,13 +16,13 @@
         style="margin-left: 2%"
         icon="chevron_left"
         label="Voltar"
-        to="/Extrato"
+        @click="voltar"
       />
       <Buttons
         style="margin-right: 2%"
         icon-right="chevron_right"
         label="Confirmar"
-        to="/ExtratoTela"
+        @click="extratoTela"
       />
     </div>
   </div>
@@ -40,6 +40,14 @@ export default {
       dataFinal:''
     };
   },
+  methods:{
+    voltar(){
+      this.$router.push('/extrato')
+    },
+    extratoTela(){
+      this.$router.push('/extratoTela')
+    }
+  }
 };
 </script>
 
