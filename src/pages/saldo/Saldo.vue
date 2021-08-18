@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <p class="subTitle">Selecione um produto:</p>
-    <div class="table">
-      <div class="q-pa-md" style="width: 50vw">
+    <div class="table" style="height: 60vh">
+      <div class="q-pa-md" style="width: 50vw; ">
         <q-table
           class="bg-grey-4"
           :rows="rows"
@@ -17,7 +17,7 @@
         <Buttons icone="keyboard_arrow_down" />
       </div>
     </div>
-    <div class="btns">
+    <div class="btns" style="">
       <Buttons texto="Voltar" icone="chevron_left" @click="voltar"/>
       <Buttons texto="Confirmar" icon-right="chevron_right" @click="confirmar" />
     </div>
@@ -91,17 +91,16 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 200px;
+  margin: 0 2%;
 }
 
 .btn {
-  margin-right: 2%;
   margin-bottom: 40px;
   }
 
 .btns {
   display: flex;
   justify-content: space-between;
-  margin-left: 2%;
+  margin: 0 2%;
 }
 </style>

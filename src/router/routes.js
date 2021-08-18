@@ -31,7 +31,6 @@ const routes = [
       { path: '/RealizarOperacao', component:()=>import('src/pages/extrato/RealizarOperacao.vue') },
       { path: '/ExtratoNegado', component:()=>import('src/pages/extrato/ExtratoNegado.vue')},
       { path: '/Final', component:()=>import('src/pages/extrato/Final.vue')},
-
       //TRANSFERENCIA
       { path: '/Transferencia', component:()=> import('src/pages/transferencia/Transferencia.vue')},
       { path:'/SenhaContaCorrente', component:()=>import('src/pages/transferencia/SenhaContaCorrente.vue')},

@@ -19,56 +19,46 @@
         />
       </div>
       <div class="column q-gutter-xl">
-        <div class="q-pa-md" style="width:30vw">
-          <q-carousel
-            v-model="slide"
-            vertical
-            transition-prev="slide-down"
-            transition-next="slide-up"
-            swipeable
-            animated
-            control-color="white"
-            navigation-icon="radio_button_unchecked"
-            navigation
-            padding
-            arrows
-            height="300px"
-            class="bg-grey-7 text-white  rounded-borders"
+        <div
+          ref="scrollTargetRef"
+          class="q-pa-md i"
+          style="max-height: 330px; width: 30vw; overflow: auto"
+        >
+          <q-infinite-scroll
+            @load="onLoadRef"
+            :offset="250"
+            :scroll-target="scrollTargetRef"
           >
-            <q-carousel-slide name="page1" class="column no-wrap flex-center">
-              <q-icon name="receipt" size="56px" />
-              <div class="q-mt-sm">
-                <span>BANPARÁ | AGÊNCIA - {{agencia}} | CONTA:{{conta}} - {{nome}}</span>
-                <span>Extrato para simples conferência | Expedido em {{data}} às {{hora}}</span>
-              </div>
-            </q-carousel-slide>
-            <q-carousel-slide name="page2" class="column no-wrap flex-center">
-              <div class="q-mt-sm">
-                <span>DATA|HISTÓRICO|Nº DOCUMENTO|VALOR(R$)</span>
-                <br>
-                <span>10/02 | Saldo Anterior |   30,50</span>
-                <br>
-                <span>13/02 |Depósito Recebido | 001234 |30,50</span>
-                <br>
-                <span>10/02 | Cartão | 001234 | 30,50</span>
-                <br>
-                <span>10/02 |Saque Caixa Eletrônico | 30,50</span>
-                <br>
-                <span>10/02 | Cartão | 001234 |  30,50</span>
-              </div>
-            </q-carousel-slide>
-            <q-carousel-slide name="page3" class="column no-wrap flex-center">
-              <q-icon name="savings" size="56px"/>
+            <div class="caption" icon>
+              <q-icon name="receipt" size="56px"/>
+              <br/>
+              <span
+                >BANPARÁ | AGÊNCIA - {{ agencia }} | CONTA:{{ conta }} -
+                {{ nome }}</span
+              >
+              <br/>
+              <span
+                >Extrato para simples conferência | Expedido em {{ data }} às
+                {{ hora }}</span
+              >
+              <span>DATA|HISTÓRICO|Nº DOCUMENTO|VALOR(R$)</span>
+              <br />
+              <span>10/02 | Saldo Anterior | 30,50</span>
+              <br />
+              <span>13/02 |Depósito Recebido | 001234 |30,50</span>
+              <br />
+              <span>10/02 | Cartão | 001234 | 30,50</span>
+              <br />
+              <span>10/02 |Saque Caixa Eletrônico | 30,50</span>
+              <br />
+              <span>10/02 | Cartão | 001234 | 30,50</span>
+              <br/>
+              <q-icon name="savings" size="56px" class="text-center" />
               <div class="q-mt-md text-center">
-                  <span>10/02 | Saldo Atual | 1.000</span>
+                <span>10/02 | Saldo Atual | 1.000</span>
               </div>
-            </q-carousel-slide>
-            <q-carousel-slide name="page4" class="column no-wrap flex-center">
-              <div class="q-mt-md text-center">
-                
-              </div>
-            </q-carousel-slide>
-          </q-carousel>
+            </div>
+          </q-infinite-scroll>
         </div>
         <Buttons
           class="btn"
@@ -88,27 +78,48 @@ export default {
   components: {
     Buttons,
   },
-  data() {
+  setup() {
+    const itemsRef = ref([{}, {}, {}, {}, {}, {}, {}]);
+    const itemsId = ref([{}, {}, {}, {}, {}, {}, {}]);
+    const scrollTargetRef = ref(null);
+
     return {
-      slide: ref("page1"),
-      agencia:'Pedreira',
-      conta: '435325',
-      nome:'Vincente José Malheiros da Fonseca Filho',
-      data:'23/07/2021',
-      hora:'14:36'
+      agencia: "Pedreira",
+      conta: "435325",
+      nome: "Vincente José Malheiros da Fonseca Filho",
+      data: "23/07/2021",
+      hora: "14:36",
+
+      itemsRef,
+      itemsId,
+      scrollTargetRef,
+
+      onLoadRef(index, done) {
+        setTimeout(() => {
+          itemsRef.value.push({}, {}, {}, {}, {}, {}, {});
+          done();
+        }, 2000);
+      },
+
+      onLoadId(index, done) {
+        setTimeout(() => {
+          itemsId.value.push({}, {}, {}, {}, {}, {}, {});
+          done();
+        }, 2000);
+      },
     };
   },
   methods: {
-    editarPeriodo () {
-      this.$router.push('/ExtratoPeriodo')
+    editarPeriodo() {
+      this.$router.push("/ExtratoPeriodo");
     },
-    imprimirExtrato(){
-      this.$router.push('/ImprimirExtrato')
+    imprimirExtrato() {
+      this.$router.push("/ImprimirExtrato");
     },
-    finalizarExtrato(){
-      this.$router.push('/Finalizarextrato')
-    }
-  }
+    finalizarExtrato() {
+      this.$router.push("/Finalizarextrato");
+    },
+  },
 };
 </script>
 
@@ -133,5 +144,11 @@ export default {
 
 .btn {
   width: 400px;
+}
+
+.i {
+  background-color: #e0e0e0;
+  color: #081f60;
+  font-weight: bold;
 }
 </style>
