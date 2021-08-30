@@ -22,7 +22,7 @@
         <div
           ref="scrollTargetRef"
           class="q-pa-md i"
-          style="max-height: 330px; width: 30vw; overflow: auto"
+          style="max-height: 330px; width: 25vw; overflow: auto"
         >
           <q-infinite-scroll
             @load="onLoadRef"
