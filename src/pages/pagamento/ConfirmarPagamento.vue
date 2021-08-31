@@ -62,7 +62,7 @@ export default {
 
 <style scoped>
 .container {
-  padding-top: 30px;
+  padding-top: 5vh;
 }
 
 .subTitle {
@@ -74,7 +74,7 @@ export default {
 }
 
 .dashboard {
-  margin-top: 50px;
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
 }
@@ -82,7 +82,7 @@ export default {
 .card{
     width: 70vw;
     height: 200px;
-    margin-bottom: 120px;
+    margin-bottom: 29vh;
     color: #081f60;
 }
 

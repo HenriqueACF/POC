@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
     .container{
-    padding-top: 30px;
+    padding-top: 5vh;
   }
 
   .subTitle{
@@ -40,12 +40,11 @@ export default {
     display: flex;
     flex-direction: column;
     margin-left: 2%;
-    margin-top: 50px;
+    margin-top: 27vh;
   }
 
   .btn{
     width: 400px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 6vh;
   }
 </style>

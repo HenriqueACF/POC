@@ -2,7 +2,7 @@
   <div class="container">
     <p class="subTitle">Selecione um produto:</p>
     <div class="table" style="height: 60vh">
-      <div class="q-pa-md" style="width: 50vw; ">
+      <div class="q-pa-md" style="width: 50vw; padding-top:10vh">
         <q-table
           class="bg-grey-4"
           :rows="rows"
@@ -12,12 +12,12 @@
         />
       </div>
 
-      <div class="btn">
+      <div class="btn" style="padding-top:10vh">
         <Buttons icone="keyboard_arrow_up" />
         <Buttons icone="keyboard_arrow_down" />
       </div>
     </div>
-    <div class="btns" style="">
+    <div class="btns" style="padding-top:5vh">
       <Buttons texto="Voltar" icone="chevron_left" @click="voltar"/>
       <Buttons texto="Confirmar" icon-right="chevron_right" @click="confirmar" />
     </div>
@@ -95,7 +95,7 @@ export default {
 }
 
 .btn {
-  margin-bottom: 40px;
+  margin-bottom: 1vh;
   }
 
 .btns {

@@ -49,7 +49,7 @@ export default {
 
 <style scoped>
 .container {
-  padding-top: 50px;
+  padding-top: 5vh;
 }
 
 .dashboard {
@@ -64,7 +64,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 120px;
-  margin-bottom: 30px;
+  margin-bottom: 4vh;
 }
 .subTitle {
   display: flex;
@@ -78,7 +78,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 7vh;
 }
 
 .inputs{
@@ -96,7 +96,7 @@ export default {
 .footer{
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 27vh;
 }
 
 .warning{

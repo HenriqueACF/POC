@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <p class="subTitle">Este é seu saldo atual:</p>
-    <div class="justify-between row">    
+    <div class="justify-between row" style="padding-bottom:5vh">    
     <div class="column q-pa-xl q-mb-xl">
       <q-card  bordered class="bg-grey-4 my-card">
         <q-card-section class="column">
@@ -77,7 +77,7 @@ export default {
 
 <style scoped>
 .container {
-  padding-top: 10px;
+  padding-top: 5vh;
 }
 
 .subTitle {

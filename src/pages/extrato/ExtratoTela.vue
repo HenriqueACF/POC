@@ -22,7 +22,7 @@
         <div
           ref="scrollTargetRef"
           class="q-pa-md i"
-          style="max-height: 330px; width: 25vw; overflow: auto"
+          style="max-height: 50vh; width: 27vw; overflow: auto"
         >
           <q-infinite-scroll
             @load="onLoadRef"
@@ -125,7 +125,7 @@ export default {
 
 <style scoped>
 .container {
-  padding-top: 10px;
+  padding-top: 5vh;
 }
 
 .subTitle {
@@ -137,7 +137,7 @@ export default {
 }
 
 .btns {
-  margin-top: 60px;
+  margin-top: 10vh;
   margin-left: 2%;
   margin-right: 2%;
 }

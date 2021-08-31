@@ -35,7 +35,7 @@ export default {
 
 <style scoped>
 .container {
-  padding-top: 30px;
+  padding-top: 5vh;
 }
 
 .subTitle {
@@ -47,7 +47,7 @@ export default {
 }
 
 .btns{
-  margin-top: 60px;
+  margin-top: 20vh;
   margin-left: 2%;
   margin-right: 2%;
 }
@@ -64,11 +64,11 @@ export default {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  height: 90px;
+  height: 16vh;
   width: 510px;
   margin-left: 2%;
-  margin-top: 100px;
-  margin-bottom: 60px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .p {

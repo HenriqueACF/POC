@@ -40,7 +40,7 @@ export default {
 .container {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 20vh;
 }
 .warning {
   display: flex;
@@ -48,12 +48,12 @@ export default {
   align-items: center;
   flex-direction: column;
   color: #081f60;
-  margin-bottom: 10px;
+  margin-bottom: 10vh;
 }
 .img {
   width: 200px;
   height: 200px;
-  margin-top: 50px;
+  margin-top: 20vh;
 }
 
 .btn {

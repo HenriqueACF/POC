@@ -45,7 +45,7 @@ export default {
   align-items: center;
   flex-direction: column;
   color: #081f60;
-  margin-bottom: 10px;
+  margin-bottom: 6vh;
 }
 .img {
   width: 200px;

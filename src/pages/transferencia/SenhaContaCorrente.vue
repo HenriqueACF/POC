@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
   .container{
-    padding-top: 30px;
+    padding-top: 5vh;
   }
 
   .subTitle{
@@ -54,13 +54,13 @@ export default {
   }
 
   .dashboard{
-    margin-top: 130px;
+    margin-top: 27vh;
   }
 
   .input{
-    margin-top: 60px;
+    margin-top: 17vh;
     margin-left: 32%;
-    margin-bottom: 60px;
+    margin-bottom: 4vh;
     width: 500px;
     font-size: 25px;
   }
@@ -77,7 +77,7 @@ export default {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 400px;
-    margin-bottom: 60px;
+    margin-bottom: 5vh;
   }
 
   .buttons{
